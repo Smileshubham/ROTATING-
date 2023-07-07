@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@font-face {
+  font-family: 'agustina';
+  src: url('/font/Agustina-Signature.otf') format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container1 {
+  background-color: rgb(242, 242, 242);
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.container1.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container1 {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+
+.circle1 {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.darkmode .circle1 {
+  background-color: white;
+}
+
+.darkmode .circle1 button {
+  color: black;
+}
+
+.container1.show-nav .circle1 {
+  transform: rotate(-93deg);
+}
+
+.circle1 button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle1 button:focus {
+  outline: none;
+}
+
+.circle1 button#open1 {
+  left: 60%;
+
+}
+
+.circle1 button#close1 {
+  left: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: -35px;
+}
+
+.container1.show-nav+nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li+li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li+li+li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #FF7979;
+  font-weight: bold;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.content .h {
+  text-align: center;
+  display: flex;
+  height: 78px;
+  align-items: center;
+  justify-content: center;
+  font-family: agustina;
+  font-size: 40px;
+  background-color: #fafafa;
+  color: black;
+}
+.darkmode .content .h {
+  color: #fafafa;
+  background-color: black;
+}
+
+/* moving nav bar css */
+
+.menus {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  float: right;
+  position: fixed;
+  line-height: 45px;
+  bottom: 5%;
+  right: 5%;
+  z-index: 5;
+}
+
+.menus li {
+  position: absolute;
+  list-style: none;
+  transform-origin: 85px;
+  left: -35px;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+  transform: rotate(0deg) translateX(64px);
+}
+
+.menus.actives li {
+  transform: rotate(calc(220deg / 6 * var(--i)));
+}
+
+.menus li a {
+  background: white;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(calc(218deg / -6 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: #111;
+  transition: 0.5s;
+}
+
+.menus li a:hover {
+  color: #ff7979;
+  transition: -0.5s;
+}
+
+.menus li #butu {
+  background: white;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(calc(218deg / -6 * var(--i)));
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  color: #111;
+  transition: 0.5s;
+}
+
+.menus li #butu:hover {
+  color: #ff7979;
+  transition: -0.5s;
+}
+
+.toggle2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  font-size: 2em;
+  transform: 1.25s;
+  transition-duration: 100ms;
+}
+
+.darkmode .toggle2 {
+  color: black;
+}
+
+.actives .toggle2 {
+  transform: rotate(90deg);
+}
+
+.front-sec {
+  background: rgb(98, 116, 231);
+  display: flex;
+  justify-content: space-between;
+  width: calc(100%- 20%);
+  align-self: flex-start;
+  background: linear-gradient(0deg, rgba(98, 116, 231, 1) 0%, rgba(135, 82, 163, 1) 100%);
+  font-family: "jost";
+  width: 100%;
+  height: 580px;
+  box-shadow: 2px 2px 18px 1px white;
+  z-index: 1;
+  align-items: center;
+  padding-left: 30px;
+}
+.darkmode .front-sec{
+  z-index: 1;
+  display: flex;
+  justify-items: space-between;
+  
+}
+.content .front-sec .intro{
+  font-size: 5rem;
+  color: rgb(255,255,255);
+  /* width: 103%; */
+  
+  
+  /* position: absolute; */
+  /* margin-left: 200px; */
+}
+.content .front-sec .imgs{
+  width: 500px;
+  height: 500px;
+  /* 
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  float: right;
+  align-items:flex-end;
+  position: absolute; */
+}
+.content .front-sec .intro .edit {
+  background: linear-gradient(to right,rgb(168, 71, 216), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.element{
+  color: rgb(235,222,153);
+}
+.aboutme {
+height: 1000px;
+align-items: center;
+
+} 
+/* .aboutme #imgs1{
+  width: 100%;
+height: 700px;
+} */
+.aboutme #imgs3{
+  width: 1000px;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  position: relative;
+  top: -800px;
+  left: 213px;
+  height: 650px;
+}
+/* .aboutme #imgs2{
+
+} */
+/* .aboutme #part2{
+  width: 100px;
+  height: 600px;
+  align-items: center;
+  z-index: 1;
+  margin-top: -510px;
+  margin-left: 600px;
+  position: absolute;
+} */
+/* .aboutme #part1{
+  align-items: center;
+  z-index: 1;
+  margin-top: -400px;
+  margin-left: 150px;
+  position: absolute;
+} */
+.whyme{
+  background: linear-gradient(to right,rgb(168, 71, 216), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  /* z-index: 1; */
+  /* margin-top: -490px; */
+  position: absolute;
+}
+/* 
+.whyabout{
+  margin-top: -510px;
+  z-index: 1;
+  position: relative;
+  border-color: black;
+  border: 10px;
+  width: 450px;
+  background-color: red;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  line-height: 20.5px;
+  font-weight: 300;
+  color: rgb(60,72,78);
+} */
+
+@media only screen and (max-width:900px){
+  .circle-container1{
+    scale: 0.8;
+  }
+  .container1 .content .h{
+    height: 65px;
+  }
+  .container1 .content .h #u{
+    margin-top: 11px;
+  }
+  .content .front-sec .imgs{
+    display: flex;
+    width: 400px;
+    height: 400px;
+  }
+  .content .front-sec .intro{
+    font-size: 3rem;
+    
+  }
+  .menus{
+    scale: 0.9;
+  }
+  .front-sec{
+    height: 400px;
+  }
+  
+}
+@media only screen and (max-width:726px){
+  .circle-container1{
+    scale: 0.7;
+  }
+
+  .container1 .content .h #u{
+    
+    margin-top: 7px;
+  }
+  .content .front-sec .imgs{
+    display: flex;
+    width: 400px;
+    height: 400px;
+  }
+  .content .front-sec .intro{
+    font-size: 2rem;
+  }
+  .menus{
+    scale: 0.8;
+  }
+  .front-sec{
+    height: 300px;
+  }
+
+}
+@media only screen and (max-width:630px){
+  .circle-container1{
+    scale: 0.6;
+  }
+  .container1 .content .h{
+    height: 50px;
+  }
+  .container1 .content .h #u{
+    margin-top: 5px;
+  }
+  .content .front-sec .imgs{
+    display: flex;
+    width: 300px;
+    height: 300px;
+  }
+  .content .front-sec .intro{
+    font-size: 1.5rem;
+  }
+  .front-sec{
+    height: 250px;
+  }
+  .menus{
+    scale: 0.7;
+  }
+
+
+}
+@media only screen and (max-width:600px){
+  .circle-container1{
+    scale: 0.5;
+  }
+  .container1 .content .h{
+    height: 44px;
+  }
+  .container1 .content .h #u{
+    margin-top: 11px;
+    font-size: 33px;
+  }
+  .content .front-sec .imgs{
+    display: flex;
+    width: 250px;
+    height: 250px;
+  }
+  .content .front-sec .intro{
+    font-size: 1rem;
+  }
+  .front-sec{
+    height: 200px;
+  }
+  .menus{
+    scale: 0.65;
+  }
+}
+@media only screen and (max-width:400px){
+  .container1 .content .h #u{
+    font-size: 27px;
+    margin-top: 11px;
+  }
+  .circle-container1{
+    scale: 0.48;
+  }
+  .container1 .content .h{
+    height: 40px;
+  }
+  .menus{
+    scale: 0.6;
+  }
+}
