@@ -19,3 +19,33 @@ var typed = new Typed('#element', {
     strings: ['Web Developer &', 'Python Programmer'],
     typeSpeed: 50,
 });
+
+
+window.addEventListener('resize', function() {
+    adjustBlackImageSize();
+  });
+  
+  function adjustBlackImageSize() {
+    const laptopComponent = document.querySelector('.about-me');
+    const laptopImage = document.querySelector('#imgs2');
+    const blackImage = document.querySelector('.black-image');
+  
+    const laptopWidth = laptopComponent.offsetWidth;
+    const laptopHeight = laptopComponent.offsetHeight;
+    const laptopRatio = laptopWidth / laptopHeight;
+  
+    const laptopImageWidth = laptopImage.offsetWidth;
+    const laptopImageHeight = laptopImage.offsetHeight;
+    const laptopImageRatio = laptopImageWidth / laptopImageHeight;
+  
+    if (laptopRatio > laptopImageRatio) {
+      blackImage.style.width = '100%';
+      blackImage.style.height = 'auto';
+    } else {
+      blackImage.style.width = 'auto';
+      blackImage.style.height = '100%';
+    }
+  }
+  
+  // Call the function initially to set the black image size
+  adjustBlackImageSize();
