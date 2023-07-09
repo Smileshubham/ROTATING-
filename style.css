@@ -309,27 +309,28 @@ nav a:hover {
   color: rgb(235,222,153);
 }
 .aboutme {
-height: 1000px;
-align-items: center;
-
+/* height: 1000px;
+align-items: center; */
+position: relative;
 } 
 /* .aboutme #imgs1{
   width: 100%;
 height: 700px;
 } */
-.aboutme #imgs3{
-  width: 1000px;
-  display: flex;
-  z-index: 1;
-  justify-content: center;
-  position: relative;
-  top: -800px;
-  left: 213px;
-  height: 650px;
+.aboutme #imgs2{
+  max-width: 100%;
+  height: auto;
 }
-/* .aboutme #imgs2{
+.aboutme .black-img{
+  position: absolute;
+  /* display: none; */
+  top: 15%;
+  right: 15%;
+  bottom: 15%;
+  left: 15%;
+  background-color: black;
+}
 
-} */
 /* .aboutme #part2{
   width: 100px;
   height: 600px;
