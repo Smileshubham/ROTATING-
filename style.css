@@ -309,37 +309,52 @@ nav a:hover {
   color: rgb(235,222,153);
 }
 .aboutme {
-/* height: 1000px;
-align-items: center; */
-position: relative;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
 } 
-/* .aboutme #imgs1{
+/* .aboutme .blacksrc{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-height: 700px;
+  height: 100%;
+  background-color: black;
 } */
 .aboutme #imgs2{
-  max-width: 100%;
+  display: block;
+  width: 100%;
   height: auto;
 }
-.aboutme .black-img{
+.aboutme #imgs2 .blacksrc{
+  display:flex;
+  height: auto;
+}
+.aboutme .blacksrc{
   position: absolute;
-  /* display: none; */
-  top: 15%;
-  right: 15%;
-  bottom: 15%;
+  top: 13%;
   left: 15%;
+  width: 70%;
+  height: 70%;
   background-color: black;
 }
 
-/* .aboutme #part2{
-  width: 100px;
-  height: 600px;
-  align-items: center;
-  z-index: 1;
-  margin-top: -510px;
-  margin-left: 600px;
+.aboutme .blacksrc #part2{
+  position: relative;
+  display:block;
+  width: 100%;
+  height: 50%;
+  left: -30%;
+}
+.aboutme  .blacksrc #part1{
   position: absolute;
-} */
+  display:block;
+  width: 100%;
+  height: 50%;
+  left: -30%;
+  top: 50%;
+}
 /* .aboutme #part1{
   align-items: center;
   z-index: 1;
@@ -347,34 +362,33 @@ height: 700px;
   margin-left: 150px;
   position: absolute;
 } */
-.whyme{
+.aboutme  .blacksrc .whyme{
   background: linear-gradient(to right,rgb(168, 71, 216), rgb(212, 4, 4));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-  /* z-index: 1; */
-  /* margin-top: -490px; */
   position: absolute;
+  display: block;
+  width: 40%;
+  height: 50%;
+  top: 19%;
+  left: 65%;
+  background-color: rgb(37,37,37);
 }
-/* 
-.whyabout{
-  margin-top: -510px;
-  z-index: 1;
-  position: relative;
-  border-color: black;
-  border: 10px;
-  width: 450px;
-  background-color: red;
-  align-items: center;
+
+.aboutme  .blacksrc .whyabout{
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 7px;
+  background-color: rgb(37,37,37);
   font-family: Georgia, serif;
-  line-height: 20.5px;
-  font-weight: 300;
+  line-height: 35px;
+  font-weight: 400;
   color: rgb(60,72,78);
-} */
+  position: absolute;
+  display:inline;
+  left: 50%;
+  top: 24%;
+  right: 40px;
+}
 
 @media only screen and (max-width:900px){
   .circle-container1{
