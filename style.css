@@ -372,22 +372,24 @@ nav a:hover {
   height: 50%;
   top: 19%;
   left: 65%;
-  background-color: rgb(37,37,37);
 }
 
 .aboutme  .blacksrc .whyabout{
   padding: 20px;
   border-radius: 7px;
-  background-color: rgb(37,37,37);
+  color: rgb(37,37,37);
   font-family: Georgia, serif;
+  box-shadow: 3px 3px 4px rgb(73, 122, 155);
   line-height: 35px;
   font-weight: 400;
   color: rgb(60,72,78);
+  justify-items: center;
   position: absolute;
-  display:inline;
+  display: flex;
   left: 50%;
   top: 24%;
   right: 40px;
+  z-index: 1;
 }
 
 @media only screen and (max-width:900px){
