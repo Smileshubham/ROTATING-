@@ -224,7 +224,7 @@ nav a:hover {
   align-items: center;
   border-radius: 50%;
   transform: rotate(calc(218deg / -6 * var(--i)));
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   color: #111;
   transition: 0.5s;
 }
@@ -269,7 +269,6 @@ nav a:hover {
   font-family: "jost";
   width: 100%;
   height: 580px;
-  box-shadow: 2px 2px 18px 1px white;
   z-index: 1;
   align-items: center;
   padding-left: 30px;
@@ -278,7 +277,10 @@ nav a:hover {
   z-index: 1;
   display: flex;
   justify-items: space-between;
-  
+  background: rgb(0,0,0);
+  background: linear-gradient(162deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+  box-shadow: 2px 2px 2px 3.5px white;
+
 }
 .content .front-sec .intro{
   font-size: 5rem;
@@ -313,7 +315,15 @@ nav a:hover {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
+  background-image: url(src_img/connectui_partii_dribbble.gif);
 } 
+.darkmode .aboutme{
+  background-image: url(src_img/drk.jpg);
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
 /* .aboutme .blacksrc{
   position: absolute;
   top: 0;
@@ -326,6 +336,7 @@ nav a:hover {
   display: block;
   width: 100%;
   height: auto;
+  
 }
 .aboutme #imgs2 .blacksrc{
   display:flex;
@@ -371,7 +382,7 @@ nav a:hover {
   display: block;
   width: 40%;
   height: 50%;
-  top: 10%;
+  top: 13%;
   left: 55%;
 }
 
@@ -380,19 +391,29 @@ nav a:hover {
   border-radius: 7px;
   color: rgb(37,37,37);
   font-family: Georgia, serif;
-  box-shadow: 3px 3px 4px rgb(73, 122, 155);
+  box-shadow: rgba(235, 232, 232, 0.827) 0px 3px 8px;
   font-size: 1.5vw;
   line-height: 2vw;
   font-weight: 400px;
-  color: rgb(60,72,78);
   justify-items: center;
   position: absolute;
   display: flex;
   left: 50%;
-  top: 16%;
+  top: 19%;
   right: 40px;
   z-index: 1;
 }
+.aboutme  .blacksrc .whyabout:hover{
+  background-position: 100% 100%;
+  background:linear-gradient(90deg,#0e96ee,#4eebd5,#fdd68d,#fb8c61);
+  opacity: 0.6;
+  transition: 1s;
+  
+}
+.certify{
+  height: 480px;
+}
+
 
 @media only screen and (max-width:900px){
   .circle-container1{
