@@ -315,10 +315,11 @@ nav a:hover {
   display: inline-block;
   max-width: 100%;
   overflow: hidden;
-  background-image: url(src_img/connectui_partii_dribbble.gif);
+  background: rgb(92,51,173);
+  background:linear-gradient(160deg, rgba(92,51,173,0.7) 45%, rgba(242,51,96,0.65) 100%);
 } 
 .darkmode .aboutme{
-  background-image: url(src_img/drk.jpg);
+  background-image: url(src_img/right.png) ;
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -348,7 +349,10 @@ nav a:hover {
   left: 15%;
   width: 70%;
   height: 70%;
-  background-color: black;
+  background: url(src_img/carbon-portfolio-bg-highres.jpeg)
+}
+.darkmode .aboutme .blacksrc{
+background: url(src_img/left.png);
 }
 
 .aboutme .blacksrc #part2{
@@ -388,10 +392,10 @@ nav a:hover {
 
 .aboutme  .blacksrc .whyabout{
   padding: 1vw;
-  border-radius: 7px;
+  border-radius: 10px;
   color: rgb(37,37,37);
   font-family: Georgia, serif;
-  box-shadow: rgba(235, 232, 232, 0.827) 0px 3px 8px;
+  /* box-shadow: rgba(235, 232, 232, 0.827) 0px 3px 8px; */
   font-size: 1.5vw;
   line-height: 2vw;
   font-weight: 400px;
@@ -402,16 +406,21 @@ nav a:hover {
   top: 19%;
   right: 40px;
   z-index: 1;
+  box-shadow: 0 20px 50px 0 rgba(28,9,80,.15);
 }
 .aboutme  .blacksrc .whyabout:hover{
-  background-position: 100% 100%;
+  /* background-position: 100% 100%;
   background:linear-gradient(90deg,#0e96ee,#4eebd5,#fdd68d,#fb8c61);
-  opacity: 0.6;
-  transition: 1s;
-  
+  opacity: 0.6; */
+  background-color:  rgb(49, 19, 94)
+
 }
 .certify{
   height: 480px;
+  /* background: rgb(92,51,173);
+  background: linear-gradient(160deg, rgba(92,51,173,1) 55%, rgba(242,51,96,1) 100%); */
+  background-color: rgb(86, 47, 102);
+
 }
 
 
