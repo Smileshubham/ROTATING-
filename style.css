@@ -415,9 +415,28 @@ height: 70%;
   box-shadow: 20px 20px 50px black;
 }
 
-.aboutme  .blacksrc .whyabout:hover{ 
-& .ress{
-  opacity: +1;
+.aboutme  .blacksrc .ress{ 
+  background-color: #111;
+  position: relative;
+  color: #fafafa;
+  display: flex;
+  border-radius: 15px;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  float: right;
+}
+.aboutme  .blacksrc .ress .resum{
+  display: flex;
+  border-radius: 15px;
+  height: 10vh;
+  justify-items: center;
+  width: 30vw;
+  cursor: pointer;
+  float: right;
+}
+  /* opacity: +1;
   background-color: #111;
   position: absolute;
   color: #fafafa;
@@ -428,10 +447,8 @@ height: 70%;
   width: auto;
   height: auto;
   transition: 0.5s;
-  bottom: 0.5vh;
-
-}
-& .resum{
+  bottom: 0.5vh; */
+/* & .resum{
   justify-content: center;
   display: flex;
   position: relative;
@@ -440,8 +457,8 @@ height: 70%;
   justify-items: center;
   width: 30vw;
   cursor: pointer;
-}
-}
+} */
+
 
 .certify{
   height: 480px;
