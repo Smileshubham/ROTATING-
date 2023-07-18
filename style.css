@@ -408,13 +408,14 @@ height: 70%;
   justify-items: center;
   position: absolute;
   display: flex;
+  flex-direction: column;
   left: 50%;
   top: 19%;
   right: 40px;
   z-index: 1;
   box-shadow: 20px 20px 50px black;
 }
-
+/* 
 .aboutme  .blacksrc .ress{ 
   background-color: #111;
   position: absolute;
@@ -426,15 +427,11 @@ height: 70%;
   height: auto;
   transition: 0.5s;
   float: right;
-}
-.aboutme  .blacksrc .ress .resum{
-  display: flex;
+} */
+.aboutme  .blacksrc .resum{
+  /* width: 30%; */
   border-radius: 15px;
-  height: 10vh;
-  justify-items: center;
-  width: 30vw;
   cursor: pointer;
-  float: right;
 }
   /* opacity: +1;
   background-color: #111;
