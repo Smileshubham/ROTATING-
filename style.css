@@ -416,7 +416,7 @@ height: 70%;
 }
 
 .aboutme  .blacksrc .whyabout:hover{ 
-  & .res{
+& .ress{
   opacity: +1;
   background-color: #111;
   position: absolute;
