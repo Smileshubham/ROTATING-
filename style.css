@@ -397,12 +397,12 @@ height: 70%;
 }
 
 .aboutme  .blacksrc .whyabout{
-  padding: 1vw;
+  padding: 0.5vw;
   border-radius: 10px;
   color: rgb(37,37,37);
   font-family: Georgia, serif;
   /* box-shadow: rgba(235, 232, 232, 0.827) 0px 3px 8px; */
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   line-height: 2vw;
   font-weight: 400px;
   justify-items: center;
@@ -410,19 +410,34 @@ height: 70%;
   display: flex;
   flex-direction: column;
   left: 50%;
-  top: 19%;
+  top: 21%;
   right: 40px;
   z-index: 1;
   box-shadow: 20px 20px 50px black;
 }
+<<<<<<< Updated upstream
 /* 
 .aboutme  .blacksrc .ress{ 
+=======
+.aboutme  .blacksrc .whyabout .ress{
+  
+  width: 0.000000000001px;
+  height: 0.000000000001px;
+}
+.aboutme  .blacksrc .whyabout .ress .resum{
+  visibility: hidden;
+}
+.aboutme  .blacksrc .whyabout:hover .ress{ 
+  opacity: +1;
+>>>>>>> Stashed changes
   background-color: #111;
-  position: absolute;
+  position:absolute;
+  justify-content: center;
   color: #fafafa;
   display: flex;
   border-radius: 15px;
   z-index: 1;
+<<<<<<< Updated upstream
   width: auto;
   height: auto;
   transition: 0.5s;
@@ -432,6 +447,27 @@ height: 70%;
   /* width: 30%; */
   border-radius: 15px;
   cursor: pointer;
+=======
+  width: 31vw;
+  height: 10vh;
+  bottom: 5px;
+transition: 0.4s ease-in-out;
+}
+.aboutme  .blacksrc .whyabout:hover .ress .resum{
+  justify-items: center;
+  visibility: inherit;
+  opacity: +1;
+  z-index: +1;
+  display: flex;
+  border-radius: 15px;
+  height: 10vh;
+  justify-content: center;
+  width: 10vw;
+  cursor: pointer;
+  float: right;
+  padding: 5px;
+  transition: 0.1s;
+>>>>>>> Stashed changes
 }
   /* opacity: +1;
   background-color: #111;
