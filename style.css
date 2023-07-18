@@ -260,6 +260,7 @@ nav a:hover {
 }
 
 .front-sec {
+  box-shadow: 5px 5px 20px black;
   background: rgb(98, 116, 231);
   display: flex;
   justify-content: space-between;
@@ -319,7 +320,7 @@ nav a:hover {
   background:linear-gradient(160deg, rgba(92,51,173,0.7) 45%, rgba(242,51,96,0.65) 100%);
 } 
 .darkmode .aboutme{
-  background-image: url(src_img/right.png) ;
+  background: url(src_img/right.png) ;
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -353,6 +354,11 @@ nav a:hover {
 }
 .darkmode .aboutme .blacksrc{
 background: url(src_img/left.png);
+position: absolute;
+top: 13%;
+left: 15%;
+width: 70%;
+height: 70%;
 }
 
 .aboutme .blacksrc #part2{
@@ -406,15 +412,37 @@ background: url(src_img/left.png);
   top: 19%;
   right: 40px;
   z-index: 1;
-  box-shadow: 0 20px 50px 0 rgba(28,9,80,.15);
+  box-shadow: 20px 20px 50px black;
 }
-.aboutme  .blacksrc .whyabout:hover{
-  /* background-position: 100% 100%;
-  background:linear-gradient(90deg,#0e96ee,#4eebd5,#fdd68d,#fb8c61);
-  opacity: 0.6; */
-  background-color:  rgb(49, 19, 94)
+
+.aboutme  .blacksrc .whyabout:hover{ 
+  & .res{
+  opacity: +1;
+  background-color: #111;
+  position: absolute;
+  color: #fafafa;
+  justify-content: center;
+  display: flex;
+  border-radius: 15px;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  bottom: 0.5vh;
 
 }
+& .resum{
+  justify-content: center;
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  height: 10vh;
+  justify-items: center;
+  width: 30vw;
+  cursor: pointer;
+}
+}
+
 .certify{
   height: 480px;
   /* background: rgb(92,51,173);
@@ -449,6 +477,11 @@ background: url(src_img/left.png);
   .front-sec{
     height: 400px;
   }
+  .ress{
+    scale: 0.9;
+    margin-left: -.9vw;
+  }
+
   
 }
 @media only screen and (max-width:726px){
@@ -473,6 +506,10 @@ background: url(src_img/left.png);
   }
   .front-sec{
     height: 300px;
+  }
+  .ress{
+    scale: 0.8;
+    
   }
 
 }
@@ -499,6 +536,9 @@ background: url(src_img/left.png);
   }
   .menus{
     scale: 0.7;
+  }
+  .ress{
+    scale: 0.6;
   }
 
 
@@ -528,6 +568,11 @@ background: url(src_img/left.png);
   .menus{
     scale: 0.65;
   }
+  .ress{
+    scale: 0.5;
+    margin-left: -15px;
+    margin-bottom: -20px;
+  }
 }
 @media only screen and (max-width:400px){
   .container1 .content .h #u{
@@ -542,5 +587,9 @@ background: url(src_img/left.png);
   }
   .menus{
     scale: 0.6;
+  }
+  .ress{
+    scale: 0.3;
+    margin-bottom: -20px;
   }
 }
