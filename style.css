@@ -417,7 +417,7 @@ height: 70%;
 
 .aboutme  .blacksrc .ress{ 
   background-color: #111;
-  position: relative;
+  position: absolute;
   color: #fafafa;
   display: flex;
   border-radius: 15px;
