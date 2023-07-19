@@ -415,7 +415,8 @@ nav a:hover {
 }
 
 .aboutme .blacksrc .whyabout:hover h2 {
-  opacity: 0.6;
+  opacity: 0.4;
+  transition: 0.6s;
 }
 
 .aboutme .blacksrc .whyabout .ress {
@@ -505,13 +506,73 @@ button:hover:active:before {
   font-size: 1.2vw bold;
 }
 .certify {
-  height: 480px;
-  /* background: rgb(92,51,173);
-  background: linear-gradient(160deg, rgba(92,51,173,1) 55%, rgba(242,51,96,1) 100%); */
-  background-color: rgb(86, 47, 102);
+ height: 900px;
+ width: 100%;
+ margin-top: -3%;
+ margin-bottom: -3%;
 
+  /* background: linear-gradient(-45deg, #fdbb2d 0%, #904ED4 100%); */
+  
+}
+.certify #imgbg{
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 
+.certify .certi h3{
+  justify-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+background: rgb(0,222,229);
+background: linear-gradient(to right, rgba(0,222,229,1) 0%, rgba(0,198,236,1) 25%, rgba(0,126,255,1) 66%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Tilt Prism', cursive;
+font-size: 5vw;
+font-weight: 400;
+margin: 0;
+}
+/* card carousel */
+.carousel {
+  width: 360px; /* Adjust the width as needed */
+  height: 480px; /* Adjust the height as needed */
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column; /* Change the direction to vertical */
+  animation: cardFlow 8s linear infinite;
+}
+.cards:hover {
+  animation: none;
+}
+.cards {
+  
+  display: flex;
+  flex-direction: column; /* Change the direction to vertical */
+}
+
+.card {
+  
+  flex: 0 0 100px; /* Adjust the card height as needed */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-bottom: 20px; /* Add margin for spacing between cards */
+}
+
+@keyframes cardFlow {
+  0% {
+    transform: translateY(0); /* Change translateY for vertical movement */
+  }
+  100% {
+    transform: translateY(-100%); /* Change translateY for vertical movement */
+  }
+}
 
 @media only screen and (max-width:900px) {
   .circle-container1 {

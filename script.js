@@ -15,6 +15,9 @@ function myfunction(){
 const night=document.getElementById('butu')
 night.addEventListener('click',() => container1.classList.toggle('darkmode'));
 
+const k=document.getElementById('butu')
+night.addEventListener('click',() => container1.classList.toggle('darkmode'));
+
 var typed = new Typed('#element', {
     strings: ['Web Developer &', 'Python Programmer'],
     typeSpeed: 50,
