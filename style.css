@@ -545,13 +545,13 @@ margin: 0;
 .carousel-container {
   display: flex;
   flex-direction: column; /* Change the direction to vertical */
-  animation: cardFlow 8s linear infinite;
+  /* animation: cardFlow 8s linear infinite; */
 }
-.cards:hover {
-  animation: none;
+.cards:hover{
+  animation-play-state: paused;
 }
 .cards {
-  
+  animation: cardFlow 8s linear infinite;
   display: flex;
   flex-direction: column; /* Change the direction to vertical */
 }
