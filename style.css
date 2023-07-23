@@ -335,6 +335,7 @@ nav a:hover {
   max-width: 100%;
   overflow: hidden;
 }
+
 .aboutme #imgs2 {
   display: block;
   width: 100%;
@@ -414,6 +415,12 @@ nav a:hover {
   box-shadow: 20px 20px 50px black;
 }
 
+.aboutme .blacksrc .whyabout h2 {
+
+  display: flex;
+  justify-self: center;
+}
+
 .aboutme .blacksrc .whyabout:hover h2 {
   opacity: 0.4;
   transition: 0.6s;
@@ -443,38 +450,42 @@ nav a:hover {
   height: 8vh;
   bottom: 5px;
   transition: 0.6s ease-in-out;
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   background-size: 400%;
   transition: opacity 0.3s ease-in-out;
   animation: animate 20s linear infinite;
 }
+
 button:hover:before {
   opacity: 1;
 }
+
 button:hover:active {
   background: none;
 }
+
 button:hover:active:before {
   filter: blur(2px);
 }
+
 @keyframes animate {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -497,82 +508,172 @@ button:hover:active:before {
   /* background:rgb(4,122,174);
   color: rgb(247,247,247); */
 
-  
-}
-  
 
-.aboutme .blacksrc .whyabout:hover .ress .resum h3{
+}
+
+
+.aboutme .blacksrc .whyabout:hover .ress .resum h3 {
   font-family: 'Gilda Display', serif;
   font-size: 1.2vw bold;
 }
-.certify {
- height: 900px;
- width: 100%;
- margin-top: -3%;
- margin-bottom: -3%;
+
+#imgbg {
+  height: auto;
+  width: 100%;
+  margin-top: -3%;
+
 
   /* background: linear-gradient(-45deg, #fdbb2d 0%, #904ED4 100%); */
-  
-}
-.certify #imgbg{
-  position: absolute;
-  width: 100%;
-  height: auto;
+
 }
 
-.certify .certi h3{
+.certify #imgbg {
+  position: absolute;
+  width: 100%;
+
+}
+
+.certify .certi h3 {
   justify-items: center;
   position: relative;
   display: flex;
   justify-content: center;
-background: rgb(0,222,229);
-background: linear-gradient(to right, rgba(0,222,229,1) 0%, rgba(0,198,236,1) 25%, rgba(0,126,255,1) 66%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: 'Tilt Prism', cursive;
-font-size: 5vw;
-font-weight: 400;
-margin: 0;
+  background: rgb(0, 222, 229);
+  background: linear-gradient(to right, rgba(0, 222, 229, 1) 0%, rgba(0, 198, 236, 1) 25%, rgba(0, 126, 255, 1) 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Tilt Prism', cursive;
+  font-size: 5vw;
+  font-weight: 400;
+  margin: 0;
 }
+
 /* card carousel */
+.outerbox {
+
+  justify-content: space-around;
+  margin-top: 6vh;
+  justify-items: center;
+  margin-left: 5vw;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  background-color: rgb(255, 233, 227);
+  height: 70vh;
+  width: 70vw;
+}
+.darkmode .outerbox {
+  background-color: rgb(205,205,205);
+}
+.aboucerti {
+  font-family: 'jost';
+}
+
 .carousel {
-  width: 360px; /* Adjust the width as needed */
-  height: 480px; /* Adjust the height as needed */
+
+  position: relative;
+  display: flex;
+  margin-top: 8vh;
+  margin-left: 1vw;
+  width: 30vw;
+  /* Adjust the width as needed */
+  height: 55vh;
+  /* Adjust the height as needed */
   overflow: hidden;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .carousel-container {
+
+  position: absolute;
   display: flex;
-  flex-direction: column; /* Change the direction to vertical */
+  height: 50vh;
+  flex-direction: column;
+  /* Change the direction to vertical */
   /* animation: cardFlow 8s linear infinite; */
 }
-.cards:hover{
+
+.cards:hover {
+
   animation-play-state: paused;
 }
+
 .cards {
-  animation: cardFlow 8s linear infinite;
-  display: flex;
-  flex-direction: column; /* Change the direction to vertical */
+
+  position: absolute;
+  height: fit-content;
+  width: 30vw;
+  margin-bottom: 5vh;
+  margin-top: 25vh;
+  animation: cardFlow 15s linear infinite;
+
+
+  /* Change the direction to vertical */
 }
 
 .card {
-  
-  flex: 0 0 100px; /* Adjust the card height as needed */
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  height: max-content;
+  flex: 0 0 100px;
+  /* Adjust the card height as needed */
+  padding: 2vh;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   background-color: #f9f9f9;
-  margin-bottom: 20px; /* Add margin for spacing between cards */
+
+  /* Add margin for spacing between cards */
 }
+
+.aboucerti {
+  font-family: 'jost';
+  justify-self: center;
+  font-size: 2.3rem;
+  padding: 20vh 5vw;
+  position: relative;
+}
+
+.aboucerti .cer {
+  background: linear-gradient(to right, rgb(168, 71, 216), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.aboucerti{
+color: rgb(92,97,75);
+}
+.darkmode .aboucerti .cer{
+  background: linear-gradient(162deg, rgba(0, 0, 0, 1) 0%, rgb(121, 180, 214) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboucerti .ceri {
+  background: linear-gradient(to right, rgba(34, 193, 195), rgba(97, 87, 188));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+/* details visibility of all cards  */
+.carousel .carousel-container .card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease-in-out .3s;
+}
+
+
 
 @keyframes cardFlow {
   0% {
-    transform: translateY(0); /* Change translateY for vertical movement */
+    transform: translateY(30vh);
+    /* Change translateY for vertical movement */
   }
+
   100% {
-    transform: translateY(-100%); /* Change translateY for vertical movement */
+    transform: translateY(-100%);
+    /* Change translateY for vertical movement */
   }
 }
+
 
 @media only screen and (max-width:900px) {
   .circle-container1 {
@@ -611,7 +712,19 @@ margin: 0;
     margin-left: -1px;
   }
 
+  .outerbox {
+    scale: 0.99.87;
+    margin-top: -2.5vh;
+  }
 
+
+}
+
+@media only screen and (max-width:800px) {
+  .outerbox {
+    scale: 0.99.70;
+    margin-top: -3.9vh;
+  }
 }
 
 @media only screen and (max-width:726px) {
@@ -642,10 +755,21 @@ margin: 0;
     height: 300px;
   }
 
+  .aboutme .blacksrc .whyabout h2 {
+    scale: 0.9
+  }
+
   .ress {
     scale: 0.8;
     margin-left: -10px;
   }
+
+  .outerbox {
+    scale: 0.99.62;
+    margin-top: -6.5vh;
+
+  }
+
 
 }
 
@@ -682,8 +806,13 @@ margin: 0;
 
   .ress {
     scale: 0.6;
+    margin-top: -19vh;
   }
 
+  .outerbox {
+    width: 70vw;
+    margin-top: -8.5vh;
+  }
 
 }
 
@@ -724,6 +853,30 @@ margin: 0;
     margin-left: -25px;
     margin-bottom: -10px;
   }
+
+  .aboutme .blacksrc .whyabout h2 {
+    scale: 0.73;
+    width: 39vw;
+    margin-left: -3.7vw;
+  }
+
+  .outerbox {
+    width: 70vw;
+    height: auto;
+    height: 55vh;
+    margin-top: -9.9vh;
+  }
+
+  .carousel {
+    scale: 0.91;
+    bottom: 6.9vh;
+  }
+
+  .aboucerti {
+    scale: 0.79;
+    padding: 10vh 5vw;
+  }
+
 }
 
 @media only screen and (max-width:500px) {
@@ -732,6 +885,28 @@ margin: 0;
     margin-left: -35px;
 
   }
+
+  .aboutme .blacksrc .whyabout h2 {
+    scale: 0.59.9;
+    margin-left: -7.9vw;
+  }
+
+  .outerbox {
+    width: 70vw;
+    height: 45vh;
+    margin-top: -6vh;
+
+  }
+
+  .carousel {
+    height: 42.5vh;
+  }
+
+  .aboucerti {
+    scale: 0.65;
+    padding: 1vh 2.5vw;
+  }
+  
 }
 
 @media only screen and (max-width:400px) {
@@ -757,4 +932,41 @@ margin: 0;
     margin-bottom: -20px;
     margin-left: -60px;
   }
+
+  .aboutme .blacksrc .whyabout h2 {
+    scale: 0.40.9;
+    margin-left: -9.3vw;
+  }
+
+  .outerbox {
+    width: 70vw;
+    height: 40vh;
+    margin-top: -5vh;
+    
+  }
+  .carousel {
+    height: 35.5vh;
+  }
+  .aboucerti {
+    scale: 0.45;
+    margin-right: -10vw;
+
+  }
+  
+}
+
+@media only screen and (max-width:350px) {
+  .outerbox {
+    scale: 0.8 0.6 0.1;
+    width: 70vw;
+    margin-top: -7.2vh;
+   
+  }
+
+  .aboucerti {
+    scale: 0.35;
+    margin-right: -10vw;
+  }
+
+  .carousel {}
 }
