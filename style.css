@@ -329,7 +329,9 @@ nav a:hover {
 }
 
 .darkmode .aboutme {
-  background: url(src_img/right.png);
+  background: url(src_img/5392092.jpg);
+  background-position: center center;
+  background-size: cover;
   position: relative;
   display: inline-block;
   max-width: 100%;
