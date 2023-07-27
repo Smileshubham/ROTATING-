@@ -93,9 +93,10 @@ body {
   transform: translateX(0);
   transition-delay: 0.3s;
 }
+
 nav {
-  justify-content:baseline ;
-  top:calc();
+  position: fixed;
+  bottom: 40px;
   left: 0;
   z-index: 100;
 }
@@ -118,17 +119,17 @@ nav ul li i {
   margin-right: 10px;
 }
 
-nav ul li + li {
+nav ul li+li {
   margin-left: 15px;
   transform: translateX(-150%);
 }
 
-nav ul li + li + li {
+nav ul li+li+li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
 
-nav a{
+nav a {
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
@@ -673,9 +674,7 @@ button:hover:active:before {
   transition: ease-in-out .3s;
 }
 
-.skillspan1{
-
-}
+.skillspan1 {}
 
 .skills h3 {
   display: flex;
@@ -711,7 +710,7 @@ button:hover:active:before {
 }
 
 .carousel1 {
-  
+
   display: flex;
   position: absolute;
   width: auto;
@@ -734,11 +733,13 @@ button:hover:active:before {
   padding: 2vh;
   background-color: #f9f9f9;
 }
-footer{
+
+footer {
   padding: 20px 0;
   display: flex;
   justify-content: center;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(-10%);
@@ -976,10 +977,11 @@ footer{
     scale: 0.79;
     padding: 10vh 5vw;
   }
-  .item1{
+
+  .item1 {
     scale: 0.9;
   }
-  
+
 }
 
 @media only screen and (max-width:500px) {
@@ -1010,10 +1012,11 @@ footer{
     scale: 0.65;
     padding: 1vh 2.5vw;
   }
-  .item1{
+
+  .item1 {
     scale: 0.85;
   }
- 
+
 
 }
 
@@ -1042,8 +1045,8 @@ footer{
   }
 
   .aboutme .blacksrc .whyabout h2 {
-    scale: 0.40.9;
-    margin-left: -9.3vw;
+    scale: 0.54.9;
+    margin-left: -8.3vw;
   }
 
   .outerbox {
