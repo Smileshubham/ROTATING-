@@ -93,12 +93,11 @@ body {
   transform: translateX(0);
   transition-delay: 0.3s;
 }
-
 nav {
-  position: absolute;
-  bottom: 40px;
+  justify-content:baseline ;
+  top:calc();
   left: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 nav ul {
@@ -119,17 +118,17 @@ nav ul li i {
   margin-right: 10px;
 }
 
-nav ul li+li {
+nav ul li + li {
   margin-left: 15px;
   transform: translateX(-150%);
 }
 
-nav ul li+li+li {
+nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
 
-nav a {
+nav a{
   color: #fafafa;
   text-decoration: none;
   transition: all 0.5s;
